@@ -1,0 +1,35 @@
+%button__closed-line {
+  position: absolute;
+  content: "";  
+  background-color: $color-text;
+  height: 2px;
+  width: 100%;
+}
+
+.button__closed {
+  position: absolute;
+  top: 20px;  
+  right: 30px; 
+  width: 30px; 
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none; 
+
+  @include media-tablet-max {
+    display: inline-block;
+  } 
+  
+  >.button__closed__line {
+    @extend %button__closed-line;
+    transform: rotate(45deg);
+    top: 50%;    
+  }
+
+    &::before {
+      @extend %button__closed-line;
+      transform: rotate(-45deg);
+      top: 50%;      
+    }     
+  }

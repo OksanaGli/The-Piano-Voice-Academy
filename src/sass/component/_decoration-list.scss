@@ -1,0 +1,13 @@
+.decoration-list {
+  padding-bottom: 15px;
+
+  &__item {
+    position: relative; 
+    padding-left: 40px;
+    margin: 0 0 5px 0;
+
+    &::before {
+      @include decoration();
+    }
+  }
+}

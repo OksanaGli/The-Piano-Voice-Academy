@@ -1,0 +1,28 @@
+.training {
+  background-color: $color-background-section;
+  padding: 100px 0;
+  scroll-margin-top: 103px;  
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__title,
+  &__description {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px);
+  }
+}

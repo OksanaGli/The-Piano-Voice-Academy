@@ -1,0 +1,34 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;  
+  background-color: $color-background;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;  
+    padding-bottom: 10px;
+
+    @include media-tablet-max {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @include media-mobile-medium {
+      padding-left: 20px; 
+      padding-right: 20px;   
+    }
+
+    @include media-mobile-small {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__shadow {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+  }
+}

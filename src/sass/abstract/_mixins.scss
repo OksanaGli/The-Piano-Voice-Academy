@@ -1,0 +1,70 @@
+@mixin font ($size, $height, $weight: 400, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin reset-list() {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+    
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+
+@mixin decoration() {
+  position: absolute; 
+  content: "";
+  background-color: $color-highlight;
+  border-radius: 50%; 
+  display: block;
+  height: 7px;
+  width: 7px;
+  left: 20px;
+  top: 10px;
+}
+
+@mixin inner-title() {
+  margin: 0 0 20px 0;
+  @extend %font-add-2;  
+  text-transform: uppercase;
+}
+
+@mixin media-hover {
+  @media (hover: hover) { @content; }
+}
+
+@mixin full-hd-width {
+  @media (max-width: $content-width) { @content;}  
+}
+
+@mixin media-desktop {
+  @media (max-width: $desktop-width) { @content;}  
+}
+
+@mixin media-tablet-max {
+  @media (max-width: $tablet-max-width) { @content;}  
+}
+
+@mixin media-tablet-medium {
+  @media (max-width: $tablet-medium-width) { @content;}  
+}
+
+@mixin media-mobile-medium {
+  @media (max-width: $mobile-medium-width) { @content;}  
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small-width) { @content;}  
+}

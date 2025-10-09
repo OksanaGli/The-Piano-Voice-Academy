@@ -1,0 +1,49 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    display: flex;  
+    gap: 20px;
+    align-items: center;  
+  }
+
+  &__description {
+    margin: 0;
+    
+    @include media-tablet-medium {
+      display: none;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-text;
+    text-decoration: none;
+    letter-spacing: 0.5px;  
+
+    &:hover .social__icon svg {
+      .social__item & {
+        fill: $color-highlight;
+        @extend %transition;
+      }
+    }
+
+    &:hover .social__description {
+      color: $color-highlight;
+      @extend %transition;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;  
+  }
+
+  &__item .social__icon svg {    
+    fill: $color-text;
+  }
+}

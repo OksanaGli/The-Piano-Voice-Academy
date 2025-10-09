@@ -1,0 +1,26 @@
+.top-bar {  
+  background-color: $color-background-section;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include media-tablet-max {
+      padding-left: 40px; 
+      padding-right: 40px;   
+    }
+    
+    @include media-mobile-medium {
+      padding-left: 20px; 
+      padding-right: 20px;   
+    }
+
+    @include media-mobile-small {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+

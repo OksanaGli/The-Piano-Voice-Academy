@@ -1,0 +1,38 @@
+.phone {
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;  
+  }
+
+  >.phone__icon svg {
+    fill: $color-text;      
+  }
+
+  &:hover .phone__number {
+    color: $color-highlight;
+    @extend %transition;
+  }
+
+  &:hover .phone__icon svg {    
+    fill: $color-highlight;
+    @extend %transition;    
+  }
+
+  &__number {
+    margin: 0; 
+    
+    @include media-tablet-medium {
+      display: none;
+    }
+  }
+}

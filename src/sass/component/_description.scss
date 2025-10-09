@@ -1,0 +1,28 @@
+.description {
+  margin: 0;  
+  @include font($size: 1.6rem, $height: 2.6rem);
+
+  &--highlight {
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 600);
+  }
+
+  &--list {
+    margin-bottom: 16px;
+  }
+
+  &--education-list {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: $color-highlight;
+    @extend %transition;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-additional;
+    }
+  }
+}
