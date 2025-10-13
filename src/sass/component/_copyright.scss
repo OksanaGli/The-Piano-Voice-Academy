@@ -6,7 +6,7 @@
   border-top: 1px solid $color-highlight;
 
   &__title {
-    @include font($size: 1.2rem, $height: 2.7rem, $weight: 400);
+    @include font($size: 0.75rem, $height: 1.6875rem, $weight: 400);
     margin: 0;
   }
 }

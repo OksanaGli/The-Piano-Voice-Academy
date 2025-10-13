@@ -39,9 +39,10 @@
   &__item {
     max-width: 50%;
     width: 100%;
-    min-height: 5rem;
+    min-height: 4rem;
     padding: 12px; 
     box-sizing: border-box;
+    text-align: left;
     
     &--mail {
       overflow-wrap: break-word;

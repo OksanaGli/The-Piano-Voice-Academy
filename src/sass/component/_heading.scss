@@ -1,12 +1,12 @@
 .heading {  
   @extend %font-add-2;
-  @include font($size: 4.8rem, $height: 4.8rem);
+  @include font($size: 3rem, $height: 3rem);
   text-transform: uppercase;
 
 
   &--inner-title {
     @media (max-width: 389.89px) {
-      @include font($size: 3.8rem, $height: 3.8rem, $weight: 400);
+      @include font($size: 2.375rem, $height: 2.375rem, $weight: 400);
     }
   }
 }

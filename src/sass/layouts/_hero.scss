@@ -35,7 +35,7 @@
 
   &__title {
     @extend %font-add-2;
-    @include font($size: 3.2rem, $height: 3.2rem, $weight: 500);
+    @include font($size: 2rem, $height: 2rem, $weight: 500);
     color: $color-background;
     text-transform: uppercase;
     margin: 0 0 20px 0 ;
@@ -43,24 +43,24 @@
 
   &__subtitle {
     @extend %font-add-2;
-    @include font($size: 7.2rem, $height: 7.2rem, $weight: 500);
+    @include font($size: 4.5rem, $height: 4.5rem, $weight: 500);
     color: $color-background;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px 0;
 
     @include media-mobile-medium {
-      @include font($size: 5.2rem, $height: 5.2rem, $weight: 500);
+      @include font($size: 3.25rem, $height: 3.25rem, $weight: 500);
     }
 
     @include media-mobile-small {
-      @include font($size: 3.2rem, $height: 3.2rem, $weight: 500);
+      @include font($size: 2rem, $height: 2rem, $weight: 500);
     }
   }
 
   &__description {
     margin: 0 0 48px 0;
-    @include font($size: 1.8rem, $height: 1.8rem);
+    @include font($size: 1.125rem, $height: 1.125rem);
     color: $color-background;
     text-align: center;
   }
