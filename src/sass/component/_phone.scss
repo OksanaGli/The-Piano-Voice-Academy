@@ -20,15 +20,18 @@
     fill: $color-text;      
   }
 
-  &:hover .phone__number {
-    color: $color-highlight;
-    @extend %transition;
-  }
-
-  &:hover .phone__icon svg {    
-    fill: $color-highlight;
-    @extend %transition;    
-  }
+  @include media-hover {
+    &:hover {    
+      .phone__number {
+        color: $color-highlight;
+        transition: all .3s ease-out;
+      }
+      .phone__icon svg {    
+        fill: $color-highlight;            
+        transition: all .3s ease-out;
+      }
+    }
+  }        
 
   &__number {
     margin: 0; 

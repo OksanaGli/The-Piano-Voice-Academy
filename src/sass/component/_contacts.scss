@@ -84,10 +84,12 @@
     background-repeat: no-repeat;
     @include font($size: inherit, $height: 1.6875rem);
   
-    &:hover {
-      background-image: url(../img/icons/mail-hover.svg);
-      @extend %transition;
-      color: $color-highlight;
+    @include media-hover {
+      &:hover {
+        background-image: url(../img/icons/mail-hover.svg);
+        transition: all .3s ease-out;
+        color: $color-highlight;
+      }
     }
 
     @media (max-width: 319.98px) {

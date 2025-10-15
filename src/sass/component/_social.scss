@@ -25,17 +25,18 @@
     text-decoration: none;
     letter-spacing: 0.5px;  
 
-    &:hover .social__icon svg {
-      .social__item & {
-        fill: $color-highlight;
-        @extend %transition;
+    @include media-hover {
+      &:hover {            
+        .social__icon svg {
+          fill: $color-highlight;
+          transition: all .3s ease-out;
+        }            
+        .social__description {
+          color: $color-highlight;
+          transition: all .3s ease-out;
+        }
       }
-    }
-
-    &:hover .social__description {
-      color: $color-highlight;
-      @extend %transition;
-    }
+    }    
   }
 
   &__icon {

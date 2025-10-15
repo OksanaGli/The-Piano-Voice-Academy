@@ -24,12 +24,14 @@
   >.button__closed__line {
     @extend %button__closed-line;
     transform: rotate(45deg);
-    top: 50%;    
+    top: 50%;
+    left: 0;    
   }
 
     &::before {
       @extend %button__closed-line;
       transform: rotate(-45deg);
-      top: 50%;      
+      top: 50%; 
+      left: 0;     
     }     
   }

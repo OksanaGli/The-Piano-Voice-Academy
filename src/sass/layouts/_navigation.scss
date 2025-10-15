@@ -41,9 +41,11 @@
     color: $color-text;
     padding: 10px 0;
     
-    &:hover {
-      color: $color-highlight;
-      @extend %transition;
+    @include media-hover {
+      &:hover {
+        color: $color-highlight;
+        transition: all .3s ease-out;
+      }
     }
 
     &--selected {  
