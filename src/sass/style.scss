@@ -1,0 +1,31 @@
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+// base
+@import "base/base";
+@import "base/hamburger";
+@import "base/closed-button";
+
+//layouts
+@import "layouts/header";
+@import "layouts/main";
+@import "layouts/hero";
+@import "layouts/information";
+@import "layouts/navigation";
+@import "layouts/top-bar";
+@import "layouts/about";
+@import "layouts/training";
+@import "layouts/footer";
+
+//component
+@import "component/title";
+@import "component/description";
+@import "component/decoration-list";
+@import "component/social";
+@import "component/contacts";
+@import "component/phone";
+@import "component/heading";
+@import "component/logo";
+@import "component/copyright";
+@import "component/overlay";
